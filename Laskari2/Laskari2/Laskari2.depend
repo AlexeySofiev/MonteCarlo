@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1486334614 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari2/Laskari2/main.cpp
+	<iostream>
+
+1486616420 source:/home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/main.cpp
+	<iostream>
+	"randoms.h"
+
+1486382402 source:/home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/Ex1.cpp
+	<iostream>
+	<math.h>
+	<fstream>
+
+1486373929 /home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/randoms.h
+	<stdio.h>
+
+1486576957 source:/home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/Ex2.cpp
+	<iostream>
+	<math.h>
+	<fstream>
+
+1486602780 source:/home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/Ex4.cpp
+	<iostream>
+	<math.h>
+	<fstream>
+
+1486617552 source:/home/sofiev/University/Kurssit/MonteCarloIntro/Laskari2/Laskari2/Ex3.cpp
+	<iostream>
+	<math.h>
+	<fstream>
+
