@@ -7,12 +7,14 @@ double genrand64_real3(void);
 
 int Ex1();
 int Ex2();
+int Ex3();
 
 
 int main()
 {
     //Ex1();
-    Ex2();
+    //Ex2();
+    Ex3();
     cout << "End!" << endl;
     return 0;
 }
