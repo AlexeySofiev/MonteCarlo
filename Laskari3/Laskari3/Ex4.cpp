@@ -27,7 +27,7 @@ int Ex4()
     genrand64_real3();
 
     for(int n=501; n<511; n++){
-        cout << setprecision(7)<< "n: "<< n<< ", value base 7: " << fEx4Fuction(n, 7) << ", value base 11: " << fEx4Fuction(n, 11) << endl;
+        cout << setprecision(7)<< "n: "<< n<< ", value base 7: " << fEx4Fuction(n, 7) << ", value base 13: " << fEx4Fuction(n, 13) << endl;
 
     }
 
