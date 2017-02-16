@@ -19,6 +19,7 @@ int Ex1()
     int iMaxRepeat=pow(10,1);
     for (int N=1;N<16; N++){
         //cout << "N: "<< N << endl;
+        dMinRatio=double(pow(10,7)), dMaxRatio=0.0, dMeanRatio=0.0;
 
         for (int iRepeat=0; iRepeat<iMaxRepeat; iRepeat++){
             iHit=0, iMiss=0;
@@ -44,7 +45,6 @@ int Ex1()
         }
         cout <<"N: "<<N << ", Volyymi: "<< dMeanRatio/double(iMaxRepeat) << "+-" << max(dMeanRatio/double(iMaxRepeat) - dMinRatio, dMaxRatio - dMeanRatio/double(iMaxRepeat)) << endl;
         //cout << N <<" "<< dMinRatio <<" " << dMaxRatio  <<" " << dMeanRatio << " " << iMiss << " " << iHit << endl;
-        dMinRatio=double(pow(10,7)), dMaxRatio=0.0, dMeanRatio=0.0;
     }
 
     return 0;

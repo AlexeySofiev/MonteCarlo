@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Ex1.cpp" />
+		<Unit filename="Ex2.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="randoms.h" />
 		<Extensions>
