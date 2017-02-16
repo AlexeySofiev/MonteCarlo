@@ -1,20 +1,22 @@
 #include <iostream>
 #include <math.h>
+#include <iomanip>      // std::setprecision
 
 using namespace std;
 
 void init_genrand64(unsigned long long seed);
 double genrand64_real3(void);
 
-double fEx4Fuction(double index, int base){
+double fEx4Fuction(int index, int base){
     double result=0.0;
     double f=1.0;
-    double i = index;
+    int i = index;
     while(i>0){
         f = f/base;
         result = result + f * (i % base);
         i = int(i / base);
     }
+    return result;
 }
 
 int Ex4()
@@ -24,6 +26,10 @@ int Ex4()
     init_genrand64(431);
     genrand64_real3();
 
+    for(int n=501; n<511; n++){
+        cout << setprecision(7)<< "n: "<< n<< ", value base 7: " << fEx4Fuction(n, 7) << ", value base 11: " << fEx4Fuction(n, 11) << endl;
+
+    }
 
     return 0;
 }

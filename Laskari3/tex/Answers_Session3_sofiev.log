@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  16 FEB 2017 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  16 FEB 2017 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -166,26 +166,34 @@ Package pdftex.def Info: ex3_answer.png used on input line 46.
 (pdftex.def)             Requested size: 310.76122pt x 385.26343pt.
  [3
 
- <./ex3_answer.png>] (./Answers_Session3_sofiev.aux) ) 
+ <./ex3_answer.png>]
+<ex4a_answer.png, id=21, 369.38pt x 216.81pt>
+File: ex4a_answer.png Graphic file (type png)
+ <use ex4a_answer.png>
+Package pdftex.def Info: ex4a_answer.png used on input line 63.
+(pdftex.def)             Requested size: 310.76122pt x 182.40366pt.
+ [4
+
+ <./ex4a_answer.png>] (./Answers_Session3_sofiev.aux) ) 
 Here is how much of TeX's memory you used:
- 1503 strings out of 493105
- 21605 string characters out of 6137072
- 78005 words of memory out of 5000000
- 4976 multiletter control sequences out of 15000+600000
- 7280 words of font info for 26 fonts, out of 8000000 for 9000
+ 1510 strings out of 493105
+ 21731 string characters out of 6137072
+ 78013 words of memory out of 5000000
+ 4982 multiletter control sequences out of 15000+600000
+ 7587 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,249b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr7.pfb>
-Output written on Answers_Session3_sofiev.pdf (3 pages, 75161 bytes).
+</usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr7.pfb>
+Output written on Answers_Session3_sofiev.pdf (4 pages, 79381 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
