@@ -1,0 +1,10 @@
+Answers available at https://github.com/AlexeySofiev/MonteCarlo/tree/master/Laskari3 
+
+They can be obtained by command: 
+git clone https://github.com/AlexeySofiev/MonteCarlo/tree/master/Laskari3
+
+The answer pdf is:
+https://github.com/AlexeySofiev/MonteCarlo/blob/master/Laskari3/tex/Answers_Session3_sofiev.pdf 
+
+
+Soon will upload the final submission to moodle.
