@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  16 FEB 2017 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  16 FEB 2017 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -148,27 +148,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 25.
+
+<ex2_answer.png, id=2, 222.8325pt x 87.32625pt>
+File: ex2_answer.png Graphic file (type png)
+ <use ex2_answer.png>
+Package pdftex.def Info: ex2_answer.png used on input line 32.
+(pdftex.def)             Requested size: 310.76122pt x 121.79486pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ex1_answer.png>]
-(./Answers_Session3_sofiev.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ex1_answer.png>] [2 <./e
+x2_answer.png>] (./Answers_Session3_sofiev.aux) ) 
 Here is how much of TeX's memory you used:
- 1491 strings out of 493105
- 21395 string characters out of 6137072
- 77989 words of memory out of 5000000
- 4966 multiletter control sequences out of 15000+600000
+ 1497 strings out of 493105
+ 21500 string characters out of 6137072
+ 78997 words of memory out of 5000000
+ 4971 multiletter control sequences out of 15000+600000
  7280 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,249b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Answers_Session3_sofiev.pdf (1 page, 59311 bytes).
+ 37i,6n,23p,249b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb>
+Output written on Answers_Session3_sofiev.pdf (2 pages, 62547 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
