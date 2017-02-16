@@ -145,7 +145,6 @@ int Ex3(){
         printf("delta I: %.9f ,", dTemp);
         printf("Time: %8.9f sec \n",difftime(t2,t1)/CLOCKS_PER_SEC);
 
-
 	}
 
 
