@@ -15,8 +15,8 @@ int main()
 {
     //Ex1();
     //Ex2();
-    //Ex3();
-    Ex4();
+    Ex3();
+    //Ex4();
     cout << "End!" << endl;
     return 0;
 }

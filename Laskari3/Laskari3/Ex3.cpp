@@ -151,6 +151,53 @@ int Ex3(){
 
 
 
+		// IS
+    // Splitting into 2 parts, from 0-5 with max 0.35 and from 5 to 10 with max 0.1
+	cout << "IS" <<endl;
+
+    int iHit1=0, iHit2=0, iMiss1=0, iMiss2=0;
+	for(int i=2; i<7; i++){
+		t1 = clock();
+		iHit1=0; iHit2=0; iMiss1=0; iMiss2=0;
+		N=pow(10,i);
+		for(int iRandom=0; iRandom<N; iRandom++){
+		      dCoord1=genrand64_real3(); 	//x, from 0 to 1
+		      if(dCoord1>0.5){
+                // second part of function definition:
+                    dCoord1=5.0+dCoord1*5;
+                    dCoord2=genrand64_real3()*0.1;
+                }else{
+                    // first part of part function:
+                    dCoord1=dCoord1*5;
+                    dCoord2=genrand64_real3()*0.35;	//y, from 0 to 0.5
+                }
+		      if(dCoord2<fEx3Function1(dCoord1, dLambda)){
+				if(dCoord1>5){
+                    iHit2++;
+				}else{
+                    iHit1++;
+                }
+
+			}else{
+				if(dCoord1>5){
+                    iMiss2++;
+				}else{
+                    iMiss1++;
+                }
+			}
+		}
+        t2 = clock();
+
+        //cout << double(iHit) << " "<<double(iHit+iMiss) <<endl;
+        dTemp =(5.0*0.1)*double(iHit2)/double(iHit2+iMiss2)+(5.0*0.35)*double(iHit1)/double(iHit1+iMiss1) -dExact;
+        cout << "N=10^"<< i <<", ";
+        printf("delta I: %.9f ,", dTemp);
+        printf("Time: %8.9f sec \n",difftime(t2,t1)/CLOCKS_PER_SEC);
+
+	}
+
+
+
 //	printf("Time: %8.5f sec", difftime(t2,t1)/CLOCKS_PER_SEC)
 
 
