@@ -45,15 +45,16 @@ int Ex1()
 
 
 
-    x=genrand64_real3();  // x0
+    x=0.1*genrand64_real3();  // x0
     xNew=x;
     dRho=n(x, N, V, kB, T); // function value at start
-    dXmax=0.5;
+    dXmax=0.05;
     //cout << dRho << endl;
 
-    for(int i=0; i<30; i++){
+    for(int i=0; i<100000; i++){
         //cout << n(genrand64_real3(), N, V, kB, T) << endl;
         x=xNew;
+        //x=0.1*genrand64_real3();
         u=2*genrand64_real3()-1;
         xNew=x+u*dXmax;
         dRhoNew=n(xNew, N, V, kB, T);
@@ -65,6 +66,8 @@ int Ex1()
             u1=genrand64_real3();
             if(dRhoNew/dRho >= u1){
                 x=xNew;
+            }else{
+                xNew=x;
             }
 
         }
