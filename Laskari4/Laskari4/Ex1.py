@@ -15,9 +15,10 @@ ex1data=numpy.loadtxt('data/ex1.txt')
 import matplotlib.pyplot as plt
 
 
-#plt.hist(ex1data,200)
+plt.hist(ex1data,200)
 
-plt.hist(ex1data[ex1data<5], 50)
+#plt.hist(ex1data[ex1data>0], 50)
+
 
 plt.show()
 

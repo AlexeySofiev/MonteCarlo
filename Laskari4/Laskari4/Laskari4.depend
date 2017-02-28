@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1488180747 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/Ex1.cpp
+1488286407 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/Ex1.cpp
 	<iostream>
 	<random>
 	<math.h>

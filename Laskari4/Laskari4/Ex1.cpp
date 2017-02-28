@@ -44,15 +44,36 @@ int Ex1()
     myfile.open ("data/ex1.txt");
 
 
-    x=10*genrand64_real3();  // x0
+
+    x=genrand64_real3();  // x0
+    xNew=x;
     dRho=n(x, N, V, kB, T); // function value at start
     dXmax=0.5;
+    //cout << dRho << endl;
 
-    for(int i=0; i<100000; i++){
+    for(int i=0; i<30; i++){
         //cout << n(genrand64_real3(), N, V, kB, T) << endl;
+        x=xNew;
+        u=2*genrand64_real3()-1;
+        xNew=x+u*dXmax;
+        dRhoNew=n(xNew, N, V, kB, T);
+        if(dRhoNew/dRho >= 1){
+            x=xNew;
+            //dRho=dRhoNew;
+        }else{
 
+            u1=genrand64_real3();
+            if(dRhoNew/dRho >= u1){
+                x=xNew;
+            }
+
+        }
+        dRho=n(x, N, V, kB, T);
+        //cout << x << " "<<dRho << endl;
+        myfile << x<<"\n";
 
     }
+    myfile.close();
 
         /*
 
