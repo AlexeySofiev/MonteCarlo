@@ -164,11 +164,11 @@ int Ex3(){
 		      dCoord1=genrand64_real3(); 	//x, from 0 to 1
 		      if(dCoord1>0.5){
                 // second part of function definition:
-                    dCoord1=5.0+dCoord1*5;
+                    dCoord1=5.0+(dCoord1-0.5)*2*5;
                     dCoord2=genrand64_real3()*0.1;
                 }else{
                     // first part of part function:
-                    dCoord1=dCoord1*5;
+                    dCoord1=dCoord1*2*5;
                     dCoord2=genrand64_real3()*0.35;	//y, from 0 to 0.5
                 }
 		      if(dCoord2<fEx3Function1(dCoord1, dLambda)){
