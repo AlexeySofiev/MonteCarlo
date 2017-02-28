@@ -41,6 +41,7 @@ int Ex1()
     double u1;
     bool bJatketaanko;
     int iIter=0;
+    double dEMean=0.0;
     myfile.open ("data/ex1.txt");
 
 
@@ -51,7 +52,9 @@ int Ex1()
     dXmax=0.05;
     //cout << dRho << endl;
 
-    for(int i=0; i<100000; i++){
+
+    dEMean=0.0;
+    for(int i=0; i<N; i++){
         //cout << n(genrand64_real3(), N, V, kB, T) << endl;
         x=xNew;
         //x=0.1*genrand64_real3();
@@ -74,10 +77,11 @@ int Ex1()
         dRho=n(x, N, V, kB, T);
         //cout << x << " "<<dRho << endl;
         myfile << x<<"\n";
-
+        dEMean+=x;
     }
     myfile.close();
 
+    cout << "<E> = " << dEMean/N << endl;
         /*
 
 
