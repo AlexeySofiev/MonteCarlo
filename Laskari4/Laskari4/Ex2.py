@@ -29,7 +29,7 @@ for i in range(aKoko[0]):
 
 # Table of distribution created, now time to simulate synthetic data
 
-iMaxRuns=1;
+iMaxRuns=5;
 aRunResults=numpy.zeros(iMaxRuns);
 
 for iRun in range(iMaxRuns):
@@ -46,19 +46,48 @@ for iRun in range(iMaxRuns):
         plt.hist(aResult);
         plt.ylabel("Counts")
         plt.xlabel("Value")
-        plt.show()
+        plt.savefig('data/ex2_synt'+str(iRun)+'.png')
     
     #CDF
     aHist, aBins= numpy.histogram(aResult, len(aResult))
     aCDF=numpy.cumsum(aHist);
-    plt.figure;
+    plt.figure();
     plt.plot(aBins[0:len(aCDF)], aCDF);
     plt.title("CDF")
     plt.ylabel("% of all")
-    plt.show()
+    #plt.show()
+
+    #print "Lower edge"
+    #print numpy.where(aCDF>=16)[0][0]
+    #print aBins[numpy.where(aCDF>=16)[0][0]]
+    dLowerLoc=numpy.where(aCDF>=16)[0][0];
+    dLowerEdge=aBins[numpy.where(aCDF>=16)[0][0]];
+
+
+    #print "Central point"
+    #print numpy.where(aCDF>=50)[0][0]
+    #print aBins[numpy.where(aCDF>=50)[0][0]]
+    dMidPoint=aBins[numpy.where(aCDF>=50)[0][0]];
+    dMidLoc=numpy.where(aCDF>=50)[0][0];
+
+    #print "Upper edge"    
+    #print numpy.where(aCDF>=84)[0][0]
+    #print aBins[numpy.where(aCDF>=84)[0][0]]
+    dUpperEdge=aBins[numpy.where(aCDF>=84)[0][0]];
+    dUpperLoc=numpy.where(aCDF>=84)[0][0]
     
-    print numpy.where(aCDF>84)[0][0]
-    print aBins[numpy.where(aCDF>84)[0][0]]
+    print dMidPoint,"(+", dUpperEdge-dMidPoint,", - ", dLowerEdge, ")"
+    
+    #aEdges=numpy.array([dLowerEdge, dLowerLoc], [dMidPoint, dMidLoc], [dUpperEdge, dUpperLoc]);
+            
+    #plt.plot(aEdges, 'r*')
+    plt.plot(dLowerEdge,aCDF[dLowerLoc],'r*')
+    plt.plot(dUpperEdge,aCDF[dUpperLoc],'r*')
+    plt.plot(dMidPoint,aCDF[dMidLoc],'r*')
+    
+    plt.savefig("data/ex2_cdf.png")
+    
+
     
 #    aRunResults[iRun]=sum(aResult);
 #    
@@ -75,4 +104,68 @@ for iRun in range(iMaxRuns):
 #plt.title('CDF ')
 #plt.show()
 #
+
+
+
+########## --------------------------------------------------##################3
+## POISSON ##
+##########-------------------------------------------------- ###################
+
+for iRun in range(iMaxRuns):
+    #iRandLoc=random.randint(0, iArraySize);
+    #iRandNum=aRandTable[iRandLoc];
+    aResult=numpy.zeros(100);
+    for i in range(100):
+        aResult[i]=numpy.random.poisson(3);
+
+    if(iRun<5):        
+        plt.figure();
+        plt.hist(aResult);
+        plt.ylabel("Counts")
+        plt.xlabel("Value")
+        plt.savefig('data/ex2_poisson_synt'+str(iRun)+'.png')
+    
+    #CDF
+    aHist, aBins= numpy.histogram(aResult, len(aResult))
+    aCDF=numpy.cumsum(aHist);
+    plt.figure();
+    plt.plot(aBins[0:len(aCDF)], aCDF);
+    plt.title("Poisson CDF")
+    plt.ylabel("% of all")
+    #plt.show()
+
+    #print "Lower edge"
+    #print numpy.where(aCDF>=16)[0][0]
+    #print aBins[numpy.where(aCDF>=16)[0][0]]
+    dLowerLoc=numpy.where(aCDF>=16)[0][0];
+    dLowerEdge=aBins[numpy.where(aCDF>=16)[0][0]];
+
+
+    #print "Central point"
+    #print numpy.where(aCDF>=50)[0][0]
+    #print aBins[numpy.where(aCDF>=50)[0][0]]
+    dMidPoint=aBins[numpy.where(aCDF>=50)[0][0]];
+    dMidLoc=numpy.where(aCDF>=50)[0][0];
+
+    #print "Upper edge"    
+    #print numpy.where(aCDF>=84)[0][0]
+    #print aBins[numpy.where(aCDF>=84)[0][0]]
+    dUpperEdge=aBins[numpy.where(aCDF>=84)[0][0]];
+    dUpperLoc=numpy.where(aCDF>=84)[0][0]
+    
+    print dMidPoint,"(+", dUpperEdge-dMidPoint,", - ", dLowerEdge, ")"
+    
+    #aEdges=numpy.array([dLowerEdge, dLowerLoc], [dMidPoint, dMidLoc], [dUpperEdge, dUpperLoc]);
+            
+    #plt.plot(aEdges, 'r*')
+    plt.plot(dLowerEdge,aCDF[dLowerLoc],'r*')
+    plt.plot(dUpperEdge,aCDF[dUpperLoc],'r*')
+    plt.plot(dMidPoint,aCDF[dMidLoc],'r*')
+    
+    plt.savefig("data/ex2_poisson_cdf.png")
+    
+
+
+
+
 
