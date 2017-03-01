@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  1 MAR 2017 05:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.1.13)  1 MAR 2017 05:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -244,56 +244,55 @@ LaTeX Info: Redefining \nameref on input line 7.
 \openout3 = `Answers_Session4_sofiev.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 14.
 
 <ex1_answer.png, id=13, 323.2075pt x 334.24875pt>
 File: ex1_answer.png Graphic file (type png)
  <use ex1_answer.png>
-Package pdftex.def Info: ex1_answer.png used on input line 25.
+Package pdftex.def Info: ex1_answer.png used on input line 26.
 (pdftex.def)             Requested size: 310.76122pt x 321.39537pt.
 
 <ex1_log.png, id=15, 407.6028pt x 265.9536pt>
 File: ex1_log.png Graphic file (type png)
  <use ex1_log.png>
-Package pdftex.def Info: ex1_log.png used on input line 34.
+Package pdftex.def Info: ex1_log.png used on input line 35.
 (pdftex.def)             Requested size: 310.76122pt x 202.768pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ex1_answer.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
+(Font)              <7> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 39.
+(Font)              <5> on input line 40.
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Underfull \hbox (badness 10000) in paragraph at lines 40--44
 
  []
 
-<ex1_fig05.png, id=30, 432.61626pt x 193.72375pt>
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ex1_answer.png>]
+<ex1_fig05.png, id=31, 432.61626pt x 193.72375pt>
 File: ex1_fig05.png Graphic file (type png)
  <use ex1_fig05.png>
-Package pdftex.def Info: ex1_fig05.png used on input line 55.
+Package pdftex.def Info: ex1_fig05.png used on input line 56.
 (pdftex.def)             Requested size: 310.76122pt x 139.16173pt.
-
-<ex1_fig008.png, id=32, 433.62pt x 213.79875pt>
+ [2 <./ex1_log.png> <./ex1_fig05.png>] <ex1_fig008.png, id=43, 433.62pt x 213.7
+9875pt>
 File: ex1_fig008.png Graphic file (type png)
- <use ex1_fig008.png>
-Package pdftex.def Info: ex1_fig008.png used on input line 64.
-(pdftex.def)             Requested size: 310.76122pt x 153.23032pt.
 
-<ex1_myDistribution.png, id=35, 385.1991pt x 252.2223pt>
+<use ex1_fig008.png>
+Package pdftex.def Info: ex1_fig008.png used on input line 65.
+(pdftex.def)             Requested size: 310.76122pt x 153.23032pt.
+ <ex1_myDistribution.png, id=46, 385.1991pt x 252.2223pt>
 File: ex1_myDistribution.png Graphic file (type png)
 
 <use ex1_myDistribution.png>
-Package pdftex.def Info: ex1_myDistribution.png used on input line 75.
+Package pdftex.def Info: ex1_myDistribution.png used on input line 76.
 (pdftex.def)             Requested size: 310.76122pt x 203.48688pt.
- [2 <./ex1_log.png>] [3 <./ex1_fig05.png> <./ex1_fig008.png>] [4 <./ex1_myDistr
-ibution.png>]
-<ex2_synt1.png, id=60, 386.6445pt x 265.9536pt>
+ [3 <./ex1_fig008.png> <./ex1_myDistribution.png>]
+[4] <ex2_synt1.png, id=60, 386.6445pt x 265.9536pt>
 File: ex2_synt1.png Graphic file (type png)
  <use ex2_synt1.png>
 Package pdftex.def Info: ex2_synt1.png used on input line 95.
@@ -317,28 +316,67 @@ File: ex2_singlecdfresult.png Graphic file (type png)
 <use ex2_singlecdfresult.png>
 Package pdftex.def Info: ex2_singlecdfresult.png used on input line 123.
 (pdftex.def)             Requested size: 310.76122pt x 116.74399pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
  [5
 
  <./ex2_synt1.png>] [6 <./ex2_synt2.png> <./ex2_cdf.png>] [7 <./ex2_singlecdfre
 sult.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+Overfull \hbox (68.1666pt too wide) in paragraph at lines 132--133
+\OT1/cmr/m/n/10 For gen-er-at-ing Pois-son ran-dom num-bers the li-brary pro-vi
+ded func-tion \OT1/cmr/m/it/10 numpy.random.poisson(3)
+ []
+
+<ex2_poisson_synt0.png, id=89, 433.62pt x 289.08pt>
+File: ex2_poisson_synt0.png Graphic file (type png)
+
+<use ex2_poisson_synt0.png>
+Package pdftex.def Info: ex2_poisson_synt0.png used on input line 138.
+(pdftex.def)             Requested size: 310.76122pt x 207.18466pt.
+
+<ex2_poisson_synt3.png, id=90, 433.62pt x 289.08pt>
+File: ex2_poisson_synt3.png Graphic file (type png)
+
+<use ex2_poisson_synt3.png>
+Package pdftex.def Info: ex2_poisson_synt3.png used on input line 145.
+(pdftex.def)             Requested size: 310.76122pt x 207.18466pt.
+ <ex2_poisson_cdf.png, id=91, 433.62pt x 289.08pt>
+File: ex2_poisson_cdf.png Graphic file (type png)
+
+<use ex2_poisson_cdf.png>
+Package pdftex.def Info: ex2_poisson_cdf.png used on input line 156.
+(pdftex.def)             Requested size: 310.76122pt x 207.18466pt.
+
+<ex2_poisson_singlecdfresult.png, id=93, 179.67125pt x 76.285pt>
+File: ex2_poisson_singlecdfresult.png Graphic file (type png)
+
+<use ex2_poisson_singlecdfresult.png>
+Package pdftex.def Info: ex2_poisson_singlecdfresult.png used on input line 165
+.
+(pdftex.def)             Requested size: 310.76122pt x 131.95375pt.
+ [8
+
+ <./ex2_poisson_synt0.png>] [9 <./ex2_poisson_synt3.png> <./ex2_poisson_cdf.png
+>] [10 <./ex2_poisson_singlecdfresult.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+ [11
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
  (./Answers_Session4_sofiev.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `Answers_Session4_sofiev.out' has not changed
 .
 (rerunfilecheck)             Checksum: D374A9EE54884B1E6C2F94B2864FF8EF;90.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 5399 strings out of 493105
- 81133 string characters out of 6137072
- 165629 words of memory out of 5000000
- 8818 multiletter control sequences out of 15000+600000
- 7588 words of font info for 27 fonts, out of 8000000 for 9000
+ 5437 strings out of 493105
+ 81897 string characters out of 6137072
+ 164888 words of memory out of 5000000
+ 8840 multiletter control sequences out of 15000+600000
+ 8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,28p,350b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,28p,350b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -347,11 +385,12 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb>
-Output written on Answers_Session4_sofiev.pdf (7 pages, 205212 bytes).
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on Answers_Session4_sofiev.pdf (11 pages, 255770 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 62 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 162 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
