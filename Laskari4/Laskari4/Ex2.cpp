@@ -1,19 +1,17 @@
 #include <iostream>
-#include "randoms.h"
+#include <random>
+#include <math.h>
+#include <fstream>
+
+
 
 using namespace std;
 void init_genrand64(unsigned long long seed);
 double genrand64_real3(void);
-int Ex1();
-int test();
-int Ex2();
 
 
-
-int main()
+int Ex2()
 {
-    //Ex1();
-    //test();
-    Ex2();
+    cout << "Exercise 2" << endl;
     return 0;
 }

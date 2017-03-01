@@ -1,5 +1,8 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage{enumitem}
 
 \begin{document}
 
@@ -13,56 +16,94 @@
 %\end{abstract}
 
 \section{Exercise 1}
-Code: Ex1.cpp. Answer: Figure \ref{fig:ex1_answer}.
+Files: Ex1.*. 
+
+\textbf{Answer:} Figure \ref{fig:ex1_answer}.
 
 \begin{figure}[!hbt]
-    \centering
-    \includegraphics[width=4.3in]{ex1_answer}
-    \caption{Ex1 answer.}
-    \label{fig:ex1_answer}
+	\centering
+	\includegraphics[width=4.3in]{ex1_answer}
+	\caption{Ex1 answer.}
+	\label{fig:ex1_answer}
 \end{figure}
 
-	Result makes sense, since the correct answers are 2, $\pi$, 4*$\pi$/3 ...
+The other main question is log- plot, visualized in Figure \ref{fig:ex1_log}.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex1_log}
+	\caption{Ex1 log plot.}
+	\label{fig:ex1_log}
+\end{figure}
+
+And point in the upper right corner is obtained at the smallest N=100. (line connects to N=$10^3 \rightarrow 10^4 ...$) Therefore, the maximal absolute value of log(E) allowed should be 3.29.
+\\
+\\
+\textbf{Solution details:}
+
+%\begin{enumerate}[noitemsep]
+	\textbf{1.} Algorithm is done basing on page 8 from \href{$https://moodle.helsinki.fi/pluginfile.php/714567/mod_resource/content/8/Markov_chain.pdf$}{Lecture notes on MCMC.}
+%\end{enumerate}
+
+	\textbf{2.} V is set to 1.
+	
+	\textbf{3.} Setting the range and $\triangle X_{max}$	
+
+First let's take a look at the function without zooming. Figure \ref{fig:ex1_fig05}
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex1_fig05}
+	\caption{Ex1, view on the function with 0.5. Function plotted with wolframalpha.}
+	\label{fig:ex1_fig05}
+\end{figure}
+
+It can be noticed, that it is pretty flat, so now lets zoom into interesting part, Figure \ref{fig:ex1_fig008}.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex1_fig008}
+	\caption{Ex1, autozoom into real part. Function plotted with wolframalpha.}
+	\label{fig:ex1_fig008}
+\end{figure}
+
+From Figure \ref{fig:ex1_fig008} it can be seen that setting $x_0$ to vary from 0 to 0.1, and $\triangle X_{max}$ to 0.05 is enough to generate most values. From lecture notes, it is told that $x_0$ doesn't really matter, on a long run, all the generated values will be distribution based distributed.
+
+After generating random values and plotting them, the distribution obtained is presented in Figure \ref{fig:ex1_myDistribution}.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex1_myDistribution}
+	\caption{Ex1, histogram of random values provided by the code.}
+	\label{fig:ex1_myDistribution}
+\end{figure}
+
+The shape looks pretty much according to the theory presented in earlier figures.
+
 
 \clearpage
 
 \section{Exercise 2}
-Answer presented in Figure \ref{fig:ex2_answer}.
+This exercise requires a lot of plotting, so will be done in Python using the Mersenne twister. File: Ex2.py
+
+\textbf{Synthetic data:}
+
+Using the lecture notes, the synthetic data, two of which are visualized in Figures \ref{fig:ex2_synt1} and \ref{fig:ex2_synt2}, is generated.
 \begin{figure}[!hbt]
 	\centering
-	\includegraphics[width=4.3in]{ex2_answer}
-	\caption{Ex2 answer.}
-	\label{fig:ex2_answer}
+	\includegraphics[width=4.3in]{ex2_synt1}
+	\caption{Ex2, an example of generated synthetic data.}
+	\label{fig:ex2_synt1}
 \end{figure}
 
-Result in Exercise 1 and Exercise 2 are pretty similar. However the sampling method requires significantly more time, so had to increase binning, which increased the uncertainty.
-
-\clearpage
-
-\section{Exercise 3}
-Answer presented in Figure \ref{fig:ex3_answer}.
 \begin{figure}[!hbt]
 	\centering
-	\includegraphics[width=4.3in]{ex3_answer}
-	\caption{Ex3 answer.}
-	\label{fig:ex3_answer}
+	\includegraphics[width=4.3in]{ex2_synt2}
+	\caption{Ex2, an example of generated synthetic data.}
+	\label{fig:ex2_synt2}
 \end{figure}
 
-The increase of N looks like increasing the precision of the result.
+The generated synthetic data of 100, is has some sort of similarity, but they are still different.
 
-The strange peak is observed in PSS at N =$10^5$, which suggests that the N is not big enough.
 
-Time increase is as predictable, N multiplication by 10 increases time nearly 10 times.
-
-\clearpage
-\section{Exercise 4}
-\subsection{a)}
-Figure \ref{fig:ex4a_answer}.
-\begin{figure}[!hbt]
-	\centering
-	\includegraphics[width=4.3in]{ex4a_answer}
-	\caption{Ex4 answer.}
-	\label{fig:ex4a_answer}
-\end{figure}
 
 \end{document}

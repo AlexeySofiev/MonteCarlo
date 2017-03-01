@@ -22,3 +22,19 @@ plt.hist(ex1data,200)
 
 plt.show()
 
+
+
+#%%
+
+ex1logData=numpy.loadtxt('data/ex1_E_R.txt');
+
+logE=numpy.log(ex1logData[:,1]);
+logR=numpy.log(ex1logData[:,2]);
+
+plt.figure()
+plt.plot(logR,logE,'*-')
+plt.xlabel("log(R)")
+plt.ylabel("log(E)")
+
+
+plt.show()
