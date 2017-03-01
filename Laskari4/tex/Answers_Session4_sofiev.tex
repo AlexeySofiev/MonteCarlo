@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\title{Monte Carlo, Exercise Session 3}
+\title{Monte Carlo, Exercise Session 4}
 \author{Alexey Sofiev, 013573003}
 
 \maketitle
@@ -84,6 +84,8 @@ The shape looks pretty much according to the theory presented in earlier figures
 
 \section{Exercise 2}
 This exercise requires a lot of plotting, so will be done in Python using the Mersenne twister. File: Ex2.py
+Images are automatically generated into a subdirectory data, and some of them are duplicated into tex folder.
+
 
 \textbf{Synthetic data:}
 
@@ -103,6 +105,26 @@ Using the lecture notes, the synthetic data, two of which are visualized in Figu
 \end{figure}
 
 The generated synthetic data of 100, is has some sort of similarity, but they are still different.
+
+
+For an example data lets calculate the CDF, and get 1 $\sigma$ uncertainty limit. Figure \ref{fig:ex2_cdf}.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex2_cdf}
+	\caption{Ex2, cdf of a single set with red starts marking 1$\sigma$ limits. x-axis is the data values.}
+	\label{fig:ex2_cdf}
+\end{figure}
+
+The values of the edges are presented in Figure \ref{fig:ex2_singlecdfresult}. It can be noticed that they are not symmetric and variance is large.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{ex2_singlecdfresult}
+	\caption{Ex2, single measurements cdf 1$\sigma$ limits.}
+	\label{fig:ex2_singlecdfresult}
+\end{figure}
+
 
 
 
