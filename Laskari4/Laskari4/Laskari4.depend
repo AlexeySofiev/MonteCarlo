@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1488286407 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/Ex1.cpp
+	<iostream>
+	<random>
+	<math.h>
+	<fstream>
+
+1488180759 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/main.cpp
+	<iostream>
+	"randoms.h"
+
+1487945114 /home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/randoms.h
+	<stdio.h>
+
+1488180660 source:/home/sofiev/University/Kurssit/MonteCarlo/Laskari4/Laskari4/test.cpp
+	<iostream>
+	<random>
+	<math.h>
+	<fstream>
+
