@@ -49,6 +49,17 @@ The height of 1D is illustrated in Figure \ref{fig:pileup} as the function of th
 
 Result is just as it is expected, medium pretty evenly distributed,  but due to toppling the edges smooths up.
 
+The dependency between sands came into system and amount of toppled is illustrated in the Figure \ref{fig:toppling}.
+
+\begin{figure}[!hbt]
+	\centering
+	\includegraphics[width=4.3in]{toppling}
+	\caption{Part 1, number of sands toppled as a function on the sands came to the system.}
+	\label{fig:toppling}
+\end{figure}
+
+So large number of topplings can be explained as toppling continuing/starting from the endpoint after the previous toppling ends.
+
 
 \clearpage
 \subparagraph*{Part 2, generating all at once\\}
@@ -89,11 +100,12 @@ The N as the function of the sum of sands toppled is illustrated in Figure \ref{
 
 \begin{figure}[!hbt]
 	\centering
-	%\includegraphics[width=4.3in]{part2sa}
-	\caption{Part 2, N and s.}
+	\includegraphics[width=4.3in]{part2sa}
+	\caption{Part 2, log(N) and log(s).}
 	\label{fig:part2sa}
 \end{figure}
 
+As it can be see the logarithmic dependency between N and s is almost a straight line. Which represents the claim presented in lecture notes that N $\propto$ $s^{something}$.
 
 
 \end{document}

@@ -116,8 +116,11 @@ aResultPart2=numpy.zeros(iSize);
 aSums=[]
 aNs=[]
 
-for N in range(3,11):
-    iMaxSands=pow(5,N);
+#for N in range(3,11):
+#    iMaxSands=pow(5,N);
+for N in range(2,7):
+
+    iMaxSands=pow(10,N);
     aNs.append(iMaxSands)
     
     # Generating the sand falling...
